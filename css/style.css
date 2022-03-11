@@ -1,0 +1,77 @@
+body {
+  background: rgba(0, 0, 7, 0.932);
+  margin: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+}
+
+.button-creator {
+  margin-top: 2rem;
+  display: flex;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+#controles {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  background: rgb(152, 168, 189);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  box-shadow: 2px 2px 2px 0 rgba(235, 235, 235, 0.1);
+  font-weight: bold;
+}
+
+.css {
+  font-family: "IBM Plex Mono", monospace;
+  color: #fff;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(192, 192, 192, 0.295);
+  box-shadow: 0 8px 32px 0 rgba(147, 150, 201, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.747);
+  font-size: 1.2rem;
+  position: relative;
+  padding: 20px;
+  min: 400px;
+}
+
+.css span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .button-creator {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #controles {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .css {
+    max-width: 300px;
+    font-size: 0.875rem;
+    min: 400px;
+    margin: 0 auto;
+  }
+}
