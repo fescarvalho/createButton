@@ -7,14 +7,8 @@ const handleStyle = {
   backgroundColor(value) {
     this.element.style.backgroundColor = value;
   },
-  height(value) {
-    this.element.style.height = value + "px";
-  },
-  color(value) {
-    this.element.style.color = value;
-  },
-  width(value) {
-    this.element.style.width = value + "px";
+  boxShadow(value) {
+    this.element.style.boxShadow = value;
   },
   border(value) {
     this.element.style.border = value;
@@ -22,14 +16,23 @@ const handleStyle = {
   borderRadius(value) {
     this.element.style.borderRadius = value + "px";
   },
+  color(value) {
+    this.element.style.color = value;
+  },
   fontSize(value) {
     this.element.style.fontSize = value + "rem";
+  },
+  fontFamily(value) {
+    this.element.style.fontFamily = value;
+  },
+  height(value) {
+    this.element.style.height = value + "px";
   },
   texto(value) {
     this.element.innerText = value;
   },
-  fontFamily(value) {
-    this.element.style.fontFamily = value;
+  width(value) {
+    this.element.style.width = value + "px";
   },
 };
 
